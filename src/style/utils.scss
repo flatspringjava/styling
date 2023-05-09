@@ -1,0 +1,15 @@
+$red : #fa5252;
+$orange:#fd7e14;
+$green : #40c057;
+$yellow:#40c057;
+$blue : #339af0;
+$indigo : #5c7cfa;
+$violet : #7950f2;
+
+// 믹스인 만들기
+// square의 이름의 파라미터 값은 $size의 값을 받는다.
+@mixin square($size) {    
+    $calculated : 32px * $size;
+    width: $calculated;
+    height: $calculated;
+}
