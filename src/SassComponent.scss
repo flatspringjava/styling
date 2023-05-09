@@ -36,6 +36,10 @@
             background: $violet;
             @include square(7);
         }
+        &.purple {
+            background: $purple;
+            @include square(8);
+        }
         &:hover {
             background: black;            
         }
