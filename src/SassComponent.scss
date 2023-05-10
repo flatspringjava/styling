@@ -1,8 +1,13 @@
-@import './style/utils.scss';
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
 .SassComponent {
     display: flex;
     //SassComponent Class안의 .box Class를 지정함.
     // .SassComponent .box
+    background: $oc-gray-2;
+    @include media('<768px') {
+        background: $oc-gray-9;
+    }
     .box {
         background: red;
         cursor: pointer;
